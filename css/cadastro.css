@@ -1,0 +1,146 @@
+:root{
+    --background-color-page         : #DDDDDD;
+    --background-color-section      : #025373;
+    --background-color-link         : #DDDDDD;
+    --color-link                    : #025373;
+    --background-color-link-hover   : #aaaaaa;
+    --color-link-hover              : #03394e;
+    --color-title                   : #025373;
+    --border-color-input            : #025373; 
+    --color-input                   : #025373;
+    --background-color-succes       : #0DC213;
+    --background-color-succes-hover : #078d0c;
+    --color-btn                     : #012840;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--background-color-page);
+}
+section{
+    background-color: var(--background-color-section);
+    width: auto;
+    padding: 1%;
+    height: 8vh;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+section>.box-btn{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    /* justify-content: start; */
+    align-items: center;
+}
+section>.box-btn>.box-link{
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+section>.box-btn>.box-link>a{
+    padding: 1%;
+    background-color: var(--background-color-link);
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.50) ;
+
+    font-family: "Alatsi";
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--color-link);
+    transition: .2s;
+}
+section>.box-btn>.box-link>a:hover{
+    background-color: var(--background-color-link-hover);
+    color: var(--color-link-hover);
+}
+
+.content-page{
+    /* background-color: #025373; */
+    width: 100%;
+    height: 88.1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Alatsi";
+    color: var(--color-title);
+    font-size: calc(3rem - 50%);
+    font-weight: 400;
+}
+
+.box-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+form{
+    width: auto;
+    height: auto;
+}
+
+.box-input{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+.box-input>input{
+    border: none;
+    margin: 2%;
+    padding: 1px 6%;
+    border-radius: 50px;
+    outline: none;
+    background-color: transparent;
+    border-color: var(--border-color-input);
+    border-width: 2.5px;
+    border-style: solid;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.50);
+
+
+    font-family: "Alatsi";
+    font-size: calc(2rem - 50%);
+    color: var(--color-input);
+}
+.box-input>input::placeholder{
+    opacity: 1;
+}
+
+.box-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-btn>button{
+    border: none;
+    width: auto;
+    margin: 2%;
+    padding: 2% 5%;
+    border-radius: 50px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.50);
+
+    font-family: "Alatsi";
+    font-weight: 400;
+    font-size: calc(1.5rem - 10%);
+    color: var(--color-btn);
+}
+
+#succes{
+    background-color: var(--background-color-succes);
+}
+#succes:hover{
+    background-color: var(--background-color-succes-hover);
+}
