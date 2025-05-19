@@ -102,7 +102,7 @@ form{
 .box-img>img{
     width: 25rem;
     height: 15rem;
-    background-color: rebeccapurple;
+    background-color: var(--color-btn);
     border-radius: 10px;
 }
 .box-input>input, .box-input>label,.box-form>img{
